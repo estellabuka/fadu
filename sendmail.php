@@ -15,7 +15,7 @@
 	//Кому отправить
 	$mail->addAddress('kovalenko.olexandra@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Привет! Это FADU';
+	$mail->Subject = 'Привіт! Це FADU';
 
 	//Вибір
 	$choose = "Бажаю допомогти";
@@ -59,9 +59,9 @@
 
 	//Отправляем
 	if (!$mail->send()) {
-		$message = 'Ошибка';
+		$message = 'Помилка';
 	} else {
-		$message = 'Данные отправлены!';
+		$message = 'Данні відправлено!';
 	}
 
 	$response = ['message' => $message];
