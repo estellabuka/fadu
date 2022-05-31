@@ -16,7 +16,7 @@ $tel = trim($tel);
 //echo $email;
 //echo "<br>";
 //echo $tel;
-if (mail("kovalenko.olexandra@gmail.com", "Заявка с сайта", "ФИО:".$fio.". Телефон:".$tel.". E-mail: ".$email ,"From: kovalenko.olexandra@gmail.com \r\n"))
+if (mail("kovalenko.olexandra@gmail.com", "Заявка с сайта FADU", "ФИО:".$fio.". Телефон:".$tel.". E-mail: ".$email ,"From: kovalenko.olexandra@gmail.com \r\n"))
  {     echo "сообщение успешно отправлено";
 } else {
     echo "при отправке сообщения возникли ошибки";

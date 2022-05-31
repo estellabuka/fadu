@@ -38,23 +38,23 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form action="send.php" method="post">
+                    <form action="#" id="form">
                         <h2 class="form__title">Маєте питання або бажаєте долучитись?</h2>
                         <h2 class="form__title">Сконтактуйтесь з нами:</h2>
                         <div class="choose">
                             <div class="choose-holder">
-                                <input id="choose-can" type="radio" name="choose" class="choose-radio" checked="checked">
+                                <input id="choose-can" type="radio" name="choose" class="choose-radio" checked="checked" value="Бажаю допомогти">
                                 <label for="choose-can" class="btn__choose">Бажаєте допомогти</label>
                             </div>    
                             <div class="choose-holder">
-                                <input id="choose-need" type="radio" name="choose" class="choose-radio">
+                                <input id="choose-need" type="radio" name="choose" class="choose-radio" value="Потребую допомоги">
                                 <label for="choose-need" class="btn__choose">Потребуєте допомоги</label>
                             </div>    
                         </div>
                         <div class="input__data">
-                            <input type="text" class="data__item" placeholder="Імʼя/ Назва організації" value="" name="fio">
-                            <input type="email" name="email" class="data__item" placeholder="Емейл" value="">
-                            <input type="tel" class="data__item" name="tel" placeholder="Номер телефону" value="">
+                            <input type="text" class="data__item _req" placeholder="Імʼя/ Назва організації" value="" name="fio">
+                            <input type="email" name="email" class="data__item _req _email" placeholder="Емейл" value="">
+                            <input type="tel" class="data__item _req" name="tel" placeholder="Номер телефону" value="">
                         </div>
                         <input type="submit" class="btn__send" value="Надіслати">
                     </form>
@@ -82,6 +82,7 @@
         </main>
     </div>    
     <div class="parallax"></div>
+    <script src="js/select.js"></script>
     <script src="js/script.js"></script>
 </body>
 
