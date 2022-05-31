@@ -17,26 +17,26 @@
 	//Тема письма
 	$mail->Subject = 'Привет! Это FADU';
 
-	//Рука
-	$hand = "Правая";
-	if($_POST['hand'] == "left"){
-		$hand = "Левая";
+	//Вибір
+	$choose = "Бажаю допомогти";
+	if($_POST['choose'] == "need"){
+		$choose = "Потребуєте допомоги";
 	}
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	$body = '<h1>На сайті FADU нова заявка</h1>';
 	
 	if(trim(!empty($_POST['name']))){
-		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+		$body.='<p><strong>Ім&rsquo;я:</strong> '.$_POST['name'].'</p>';
 	}
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 	}
-	if(trim(!empty($_POST['hand']))){
-		$body.='<p><strong>Рука:</strong> '.$hand.'</p>';
+	if(trim(!empty($_POST['choose']))){
+		$body.='<p><strong>Я:</strong> '.$choose.'</p>';
 	}
-	if(trim(!empty($_POST['age']))){
-		$body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
+	if(trim(!empty($_POST['tel']))){
+		$body.='<p><strong>Номер телефона:</strong> '.$_POST['tel'].'</p>';
 	}
 	
 	if(trim(!empty($_POST['message']))){
