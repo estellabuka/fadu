@@ -16,7 +16,7 @@
     //echo $email;
     //echo "<br>";
     //echo $tel;
-    if (mail("kovalenko.olexandra@gmail.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: kovalenko.olexandra@gmail.com \r\n"))
+    if (mail("kovalenko.olexandra@gmail.com", "Заявка с сайта", "Ім'я:".$fio.". E-mail: ".$email" Номер телефону:".$tel."  ,"From: kovalenko.olexandra@gmail.com \r\n"))
      {     echo "сообщение успешно отправлено";
     } else {
         echo "при отправке сообщения возникли ошибки";
