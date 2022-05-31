@@ -101,11 +101,11 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 110px;
+    margin: 0 0 40px;
 }
 .main {
-    flex: 0 0 586px;
-
+    flex: 0 1 586px;
+    margin: 0 88px 0 0;
 }
 .title {
     font-weight: 400;
@@ -122,25 +122,9 @@ body {
 .text__paragraph:not(:last-child) {
     margin: 0 0 1em;
 }
-.contacts__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1;
-    margin: 0 0 12px;
-}
-.contacts__box {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.43;
-}
-.contact__item {
-    color: #000;
-    text-decoration: none;
-    display: block;
-}
 .form {
-    /* text-align: right; */
     flex: 0 0 508px;
+    max-width: 508px;
 }
 .form__title {
     font-weight: 500;
@@ -166,6 +150,8 @@ body {
     line-height: 30px;
     padding: 0 33px;
     cursor: pointer;
+    display: block;
+    text-align: center;
 }
 .choose-holder .btn__choose:after {
     content: "";
@@ -208,11 +194,10 @@ body {
 
 }
 .input__data {
-    margin: 0 0 40px;
-    display: flex;
-    flex-direction: column;
-}
+    margin: 0 0 40px;}
 .data__item {
+    display: block;
+    width: 100%;
     padding: 16px;
     border-radius: 4px;
     background-color: transparent;
@@ -228,12 +213,57 @@ body {
 .data__item:not(:last-child) {
     margin: 0 0 24px;
 }
-.footer {
+.footer__contacts {
+    margin: 0 0 40px;
+}
+.contacts__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 12px;
+}
+.contacts__box {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+}
+.contact__item {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+.social {
     display: flex;
 }
-.social__media {
+.social__link {
     margin: 0 38px 0 0;
 }
-.social__media img{
+.social__link img{
     display: block;
+}
+@media only screen
+and (max-width: 1200px) {
+  .content {
+    display: block;
+  }
+
+}
+@media only screen
+and (max-width: 768px) {
+    .header,
+    .container {
+        padding: 25px 20px;
+    }
+    .form {
+        max-width: unset;
+    }
+    .choose-holder .btn__choose,
+    .choose-holder .choose-radio:checked ~ .btn__choose {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 4px;
+    }
+    .btn__send {
+        width: 100%;
+    }
 }
