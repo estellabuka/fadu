@@ -11,9 +11,9 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('kovalenko.olexandra@gmail.com', 'FADU');
+	$mail->setFrom('info@fadu.in.ua', 'FADU');
 	//Кому отправить
-	$mail->addAddress('kovalenko.olexandra@gmail.com');
+	$mail->addAddress('info@fadu.in.ua');
 	//Тема письма
 	$mail->Subject = 'Привіт! Це FADU';
 
