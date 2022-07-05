@@ -42,7 +42,7 @@
         <section class="help">
             <div class="help__flex">
                 <div class="help__flex-container">
-                    <!--<button class="btn btn-black">Зробити внесок</button>-->
+                    <button class="btn btn-black js-btn__modal">Зробити внесок</button>
 
                     <div class="help__img-container">
                         <img class="help__img" src="img/main-photo02.png" alt="">
@@ -246,7 +246,7 @@
                                     намагаємось робити добрі справи за можливостями.</p>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                                 <a href="#form" class="btn">Отримати допомогу</a>
                             </div>
                         </div>
@@ -282,7 +282,7 @@
                                     телефону, щоб більш детальніше дізнатись про можливості допомоги фонду. </p>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                                 <a href="#form" class="btn">Отримати допомогу</a>
                             </div>
                         </div>
@@ -323,7 +323,7 @@
                                     після закінчення війни.</p>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                             </div>
                         </div>
                     </div>
@@ -372,7 +372,7 @@
                                     після закінчення війни.</p>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                             </div>
                         </div>
                     </div>
@@ -414,6 +414,73 @@
 
 
 
+    </div>
+
+
+    <div class="popup__none">
+        <div class="popup__window">
+            <div class="popup__head">
+                <h4 class="popup__title">Зробити внесок</h4>
+                <button class="btn__close"><img src="img/btn__close.svg" alt=""></button>
+            </div>
+            <div class="popup__box">
+                <div class="popup__item">
+                    <input id="choose__uah" type="radio" name="choose" class="choose-radio" checked="checked"
+                            value="uah">
+                    <label for="choose__uah" class="btn__choose">У гривнях</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">АТ «ОТП Банк»</h4>
+                            <p class="regular">Реквизити фонду: <span id="p1">5375411402746387</span> <button class="btn__copy" onclick="copyToClipboard('#p1')"><img src="img/btn__copy.svg" alt=""></button></p>
+                            <p class="regular">Код Одержувача: 44760805</p>
+                            <p class="regular">МФО: 300528</p>
+                            <p class="regular">Отримувач: БЛАГОДІЙНА ОРГАНІЗАЦІЯ «БЛАГОДІЙНИЙ ФОНД «ДОБРОВІЛЬНА ДОПОМОГА РОЗВИТКУ УКРАЇНИ» </p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Монобанк</h4>
+                            <p class="regular">Реквизити: <span id="p2">5375411402746387</span> <button class="btn__copy" onclick="copyToClipboard('#p2')"><img src="img/btn__copy.svg" alt=""></button></p>
+                            <p class="regular">Отримувач: Камишов Олександр</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__usd" type="radio" name="choose" class="choose-radio" checked="checked"
+                            value="usd">
+                    <label for="choose__usd" class="btn__choose">У валюті</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">OTP BANK JSC</h4>
+                            <p class="regular">Currencies: USD, EUR, JPY, PLN, CAD, RUB, GBP, CZK, SEK, CHF, HUF</p>
+                            <p class="regular">Account: <span id="p3">UA743005280000026001000021648</span> <button class="btn__copy" onclick="copyToClipboard('#p3')"><img src="img/btn__copy.svg" alt=""></button></p>
+                            <p class="regular">SWIFT code: OTPVUAUK</p>
+                            <p class="regular">Beneﬁciary: СО «CF «FADU»</p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Монобанк</h4>
+                            <p class="regular">Currencies: USD</p>
+                            <p class="regular">Account: <span id="p4">UA043052990000026203870160442</span> <button class="btn__copy" onclick="copyToClipboard('#p4')"><img src="img/btn__copy.svg" alt=""></button></p>
+                            <p class="regular">SWIFT code: CHASUS33</p>
+                            <p class="regular">Beneﬁciary: KAMYSHOV OLEKSANDR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__crypto" type="radio" name="choose" class="choose-radio" checked="checked"
+                            value="crypto">
+                    <label for="choose__crypto" class="btn__choose">У криптовалюті</label>
+                    <div class="popup__content">
+                            <h4 class="bold">OTP BANK JSC</h4>
+                            <div class="qr__container">
+                                <img src="img/qr.svg" alt="" class="qr__img">
+                            </div>
+                            <p class="regular">BUSD Адреса для поповнень: <span id="p5">0xccc1453839dd29c5d2cacae974d3683dc01f34b</span> <button class="btn__copy" onclick="copyToClipboard('#p5')"><img src="img/btn__copy.svg" alt=""></button></p>
+                            <p class="regular">Мережа: BNB Smart Chain (BEP20)</p>
+                            <p class="regular">Гаманець: Спотовий гаманець</p>
+                            <p class="regular">Минимальна сума переказу: 0,00000001 BUSD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/form.js"></script>
