@@ -780,10 +780,7 @@ body.lock {
 .popup__window {
     position: relative;
     padding: 36px 40px;
-    /* width: 1052px;
-    height: 694px; */
     flex-basis: 75%;
-    height: 70vh;
     background-color: #EBE8E7;
     z-index: 10000;
 }
