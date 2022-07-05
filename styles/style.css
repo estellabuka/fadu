@@ -879,6 +879,7 @@ body.lock {
 .popup__item .choose-radio:checked ~ .btn__choose:after {
     display: block;
 }
+
 /* MEDIA */
 @media only screen
 and (max-width: 1576px) {
@@ -1046,10 +1047,10 @@ and (max-width: 1000px) {
         margin-bottom: 10px;
     }
     .statistic {
-        padding: 38px 0;
+        padding: 32px 0;
     }
     .statistic__title {
-        margin-bottom: 38px;
+        margin-bottom: 32px;
     }
     .statistic__box {
         flex-direction: column;
@@ -1057,6 +1058,7 @@ and (max-width: 1000px) {
     .statistic__item:not(:last-child), .statistic__item:last-child {
         border-right: none;
         margin-left: 0;
+        padding-right: 0;
     }
     .content__box {
         flex-direction: column;
@@ -1065,17 +1067,25 @@ and (max-width: 1000px) {
         border-right: none;
     }
     .item__title {
+        font-size: 36px;
         display: inline-block;
-        margin-right: 38px;
+        /* margin-right: 38px; */
     }
     .statistic__item {
+        font-size: 26px;
+        text-transform:lowercase;
+        text-align: left;
+        
+    }
+    /* .statistic__item {
         display: flex;
         align-items: center;
-    }
+    } */
     .gum__text-box {
-        margin-right: 0;
+        /* margin-right: 0;
         margin-top: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 0; */
+        margin: 32px 0 0 0;
     }
     .gum__text-right {
         margin-left: 0;
@@ -1084,7 +1094,7 @@ and (max-width: 1000px) {
         margin-bottom: 32px;
     }
     .gum__box:not(:last-child) {
-        margin-bottom: 64px;
+        margin-bottom: 32px;
     }
     .gum__help {
         padding-bottom: 0;
@@ -1129,6 +1139,9 @@ and (max-width: 1000px) {
 }
 @media only screen
 and (max-width: 700px) {
+    .ui-tabs {
+        margin-bottom: 32px;
+    }
     .title__bold {
         font-size: 70px;
     }
@@ -1146,7 +1159,7 @@ and (max-width: 700px) {
         margin: 32px 0 0 0;
     }
     .par__bold {
-        font-size: 100px;
+        font-size: 70px;
     }
     .par__light {
         font-size: 45px;
@@ -1172,11 +1185,17 @@ and (max-width: 700px) {
     .nav__item:not(:last-child) {
         margin-right: 32px;
     }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .social__media {
+        margin-top: 32px;
+    }
 }
 @media only screen
 and (max-width: 650px) {
     .title__bold {
-        font-size: 50px;
+        font-size: 46px;
     }
     .title__light {
         font-size: 35px;
@@ -1194,6 +1213,24 @@ and (max-width: 650px) {
         padding: 0 32px;
     }
     .help__flex {
+        margin-bottom: 32px;
+    }
+}
+@media only screen
+and (max-width: 500px) {
+    .test__title, .statistic__title {
+        font-size: 32px;
+    }
+    .par__light.h3, .info__right-img {
+        margin-bottom: 32px;
+    }
+    .info__top-par .par__light {
+        font-size: 35px;
+    }
+    .statistic__title {
+        text-align: right;
+    }
+    .statistic {
         margin-bottom: 32px;
     }
 }
