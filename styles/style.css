@@ -844,12 +844,17 @@ body.lock {
 .qr__container {
     width: 142px;
     height: 142px;
-    margin: 32px auto;
+    margin: 32px 0;
 }
 .qr__img {
     width: 100%;
 }
-
+.copied {
+    display: none;
+    padding: 0 10px;
+    color: #5C5C5C;
+    font-size: 14px;
+}
 
 /* MEDIA */
 @media only screen

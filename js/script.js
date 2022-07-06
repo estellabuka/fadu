@@ -38,6 +38,7 @@ btnDonutAll.forEach(btnDonut => {
 })
 
 
+
 // btn copy
 
 function copyToClipboard(element) {
@@ -47,3 +48,22 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+
+const btnCopyAll = document.querySelectorAll('.btn__copy');
+btnCopyAll.forEach((btnCopy, btnIndex) => {
+  btnCopy.addEventListener('click', ()=> {
+    document.querySelectorAll('.copied').forEach((copyItem, copyIndex) =>{
+      if(btnIndex === copyIndex) {
+        copyItem.style.display = 'block';
+
+        setTimeout(dissapearText, 1000);
+      }
+
+      function dissapearText() {
+        copyItem.style.display = 'none';
+      }
+      
+    })
+
+  })
+})
