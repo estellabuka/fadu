@@ -6,12 +6,12 @@
   btnMoreBox.forEach((btnMore, btnMoreIndex) => {
       btnMore.addEventListener('click', ()=>{
         
-        const textArray = document.querySelectorAll('.hide__text');
+        const textArray = document.querySelectorAll('.hide__box');
 
         textArray.forEach((text, textIndex)=> {
           if(btnMoreIndex === textIndex){
             
-            text.classList.toggle('show__text');
+            text.classList.toggle('show__box');
             
           }
         })
@@ -22,13 +22,48 @@
 // btn donut
 
 
-const btnDonutAll = document.querySelectorAll('.btn__donut');
-console.log(btnDonutAll);
+const btnDonutAll = document.querySelectorAll('.js-btn__modal');
 
 btnDonutAll.forEach(btnDonut => {
   btnDonut.addEventListener('click', ()=>{
-    console.log('test')
+    document.querySelector('.popup__none').style.display = 'flex';
+    document.querySelector('body').classList.add('lock');
+  })
+
+  const btnClose = document.querySelector('.btn__close');
+  btnClose.addEventListener('click', ()=> {
+    document.querySelector('.popup__none').style.display = 'none';
+    document.querySelector('body').classList.remove('lock');
   })
 })
 
 
+
+// btn copy
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+const btnCopyAll = document.querySelectorAll('.btn__copy');
+btnCopyAll.forEach((btnCopy, btnIndex) => {
+  btnCopy.addEventListener('click', ()=> {
+    document.querySelectorAll('.copied').forEach((copyItem, copyIndex) =>{
+      if(btnIndex === copyIndex) {
+        copyItem.style.display = 'block';
+
+        setTimeout(dissapearText, 1000);
+      }
+
+      function dissapearText() {
+        copyItem.style.display = 'none';
+      }
+      
+    })
+
+  })
+})

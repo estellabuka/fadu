@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>FADU</title>
 </head>
 
@@ -32,17 +32,17 @@
         </header>
 
         <div class="title__box">
-            <div class="title">
-                <h3 class="title__light">Фонд відновлення</h3>
-                <h2 class="title__bold">Харківської області</h2>
-                <h3 class="title__light none__line-height">та</h3>
-                <h2 class="title__bold">харкова</h2>
-            </div>
+            <h2 class="main__title">
+                <span class="title__light">Фонд відновлення</span>
+                <span class="title__bold">Харківської області</span>
+                <span class="title__light none__line-height">та</hspan3>
+                <span class="title__bold">харкова</span>
+            </h2>
         </div>
         <section class="help">
             <div class="help__flex">
                 <div class="help__flex-container">
-                    <!--<button class="btn btn-black">Зробити внесок</button>-->
+                    <button class="btn btn-black js-btn__modal">Зробити внесок</button>
 
                     <div class="help__img-container">
                         <img class="help__img" src="img/main-photo02.png" alt="">
@@ -92,13 +92,13 @@
                     <img class="top__img" src="img/main-photo03.png" alt="">
                 </div>
                 <div class="info__top-par">
-                    <p class="par__bold">7 144 500</p>
+                    <p class="par__bold">7 144 500 &#8372</p>
                     <p class="par__light">роздано</p>
                 </div>
             </div>
             <div class="info__flex">
                 <div class="info__left">
-                    <h3 class="par__light h3">Про фонд</h3>
+                    <h3 class="title">Про фонд</h3>
                     <div class="info__text">
                         <p class="info__text-par">Благодійна організація «Благодійний Фонд «Добровільна допомога
                             розвитку України» - це фонд
@@ -195,7 +195,7 @@
         </div>
 
         <section class="statistic">
-            <h2 class="statistic__title">статистика по харкову та області</h2>
+            <h2 class="title__center title">статистика по харкову та області</h2>
             <ul class="statistic__box">
                 <li class="statistic__item">
                     <span class="item__title">3100</span>
@@ -221,37 +221,39 @@
 
         <section class="gum__help">
             <div class="gum__box">
-                <h2 class="test__title">
-                    Гуманітарна допомога <span class="test__t top">локальному</span> <span
-                        class="test__t bottom">населенню</span>
-                </h2>
+                <h3 class="title">
+                    Гуманітарна допомога локальному
+                    <span class="gum__t">населенню</span>
+                </h3>
                 <div class="gum__flex">
                     <div class="gum__text-box">
                         <div class="gum__text gum__text-left">
                             <p class="gum__text-bold">Забезпечення фондом необхідного для населення : їжа,
                                 продовольчі товари, одяг, засоби індивідуальної гігієни, корма для тварин тощо.</p>
-                            <span class="gum__text-bold show__more">Детальніше</span>
-                            <div class="hide__text">
-                                <p class="gum__text-regular">Основне завдання гуманітарного напрямку допомоги Фонду - є
-                                    покращення стану гуманітарного забезпечення населення Харкова та Харківської
-                                    області.</p>
-                                <p class="gum__text-regular">Гуманітарну допомогу фонду можна отримати шляхом заповнення
-                                    анкети « Гуманітарна потреба для населення». Ми надаємо гуманітарну допомогу за
-                                    напрямками : їжа, продовольчі товари, одяг, корма для тварин, лікарські препарати,
-                                    продукти для дітей та малюків. </p>
-                                <p class="gum__text-regular">Ми працюємо над розширенням допомоги від фонду, щоб можна
-                                    було допомогти як найбільшому кількостю населення, але ми залежні від грошового та
-                                    товарного постачання.</p>
-                                <p class="gum__text-regular">Дуже просимо підходити до допомоги з зрозумінням, ми
-                                    намагаємось робити добрі справи за можливостями.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Детальніше</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Основне завдання гуманітарного напрямку допомоги Фонду - є
+                                        покращення стану гуманітарного забезпечення населення Харкова та Харківської
+                                        області.</p>
+                                    <p class="gum__text-regular">Гуманітарну допомогу фонду можна отримати шляхом заповнення
+                                        анкети « Гуманітарна потреба для населення». Ми надаємо гуманітарну допомогу за
+                                        напрямками : їжа, продовольчі товари, одяг, корма для тварин, лікарські препарати,
+                                        продукти для дітей та малюків. </p>
+                                    <p class="gum__text-regular">Ми працюємо над розширенням допомоги від фонду, щоб можна
+                                        було допомогти як найбільшому кількостю населення, але ми залежні від грошового та
+                                        товарного постачання.</p>
+                                    <p class="gum__text-regular">Дуже просимо підходити до допомоги з зрозумінням, ми
+                                        намагаємось робити добрі справи за можливостями.</p>
+                                </div>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                                 <a href="#form" class="btn">Отримати допомогу</a>
                             </div>
                         </div>
                     </div>
-                    <div class="gum__slider">
+                    <div class="img__box">
                         <img src="img/main-photo06.png" alt="" class="slider__img">
                     </div>
                 </div>
@@ -259,30 +261,32 @@
 
 
             <div class="gum__box">
-                <h2 class="test__title test__right">Гуманітарна допомога <span
-                        class="test__t test__t-right">військовим</span></h2>
+                <h2 class="title title__right">Гуманітарна допомога <span
+                        class="gum__t">військовим</span></h2>
                 <div class="gum__flex">
-                    <div class="gum__slider">
+                    <div class="img__box">
                         <img src="img/main-photo07.png" alt="" class="slider__img">
                     </div>
                     <div class="gum__text-box">
                         <div class="gum__text gum__text-right">
                             <p class="gum__text-bold">Підтримка наших захисників їжею, зручним одягом, облаштування
                                 спальних місць, інструментами, будівельними матеріалами тощо.</p>
-                            <span class="gum__text-bold show__more">Детальніше</span>
-                            <div class="hide__text">
-                                <p class="gum__text-regular">Військові України – це гордість нації. Ми вважаємо за
-                                    необхідне підтримувати наших захисників, роблячи більш комфортнішими умови їхнього
-                                    перебування на фронті.</p>
-                                <p class="gum__text-regular">Ми надаємо гуманітарну допомогу за напрямками : продукти
-                                    харчування, продовольчі товари, одяг, амуніція, будівельні матеріали, інструменти (
-                                    лопати, ручні пили, сокири тощо), спальні місця тощо. </p>
-                                <p class="gum__text-regular">Гуманітарну допомогу фонду можна отримати шляхом заповнення
-                                    анкети « Гуманітарна потреба для військових», або зателефонувати за номером
-                                    телефону, щоб більш детальніше дізнатись про можливості допомоги фонду. </p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Детальніше</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Військові України – це гордість нації. Ми вважаємо за
+                                        необхідне підтримувати наших захисників, роблячи більш комфортнішими умови їхнього
+                                        перебування на фронті.</p>
+                                    <p class="gum__text-regular">Ми надаємо гуманітарну допомогу за напрямками : продукти
+                                        харчування, продовольчі товари, одяг, амуніція, будівельні матеріали, інструменти (
+                                        лопати, ручні пили, сокири тощо), спальні місця тощо. </p>
+                                    <p class="gum__text-regular">Гуманітарну допомогу фонду можна отримати шляхом заповнення
+                                        анкети « Гуманітарна потреба для військових», або зателефонувати за номером
+                                        телефону, щоб більш детальніше дізнатись про можливості допомоги фонду. </p>
+                                </div>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                                 <a href="#form" class="btn">Отримати допомогу</a>
                             </div>
                         </div>
@@ -292,42 +296,45 @@
             </div>
 
             <div class="gum__box">
-                <h2 class="test__title">Відбудова та реставрація власних житлових будинків</h2>
+                <h2 class="title">Відбудова та реставрація власних житлових
+                    <span class="gum__t">будинків</span></h2>
                 <div class="gum__flex">
                     <div class="gum__text-box text-box__left">
                         <div class="gum__text gum__text-left">
                             <p class="gum__text-bold">Допомога людям у відбудові будинків, згорілих квартира від
                                 бомбардування тощо.</p>
-                            <span class="gum__text-bold show__more">Детальніше</span>
-                            <div class="hide__text">
-                                <p class="gum__text-regular">Відбудувати Харків та Харківську область – це основна мета
-                                    нашої роботи фонду. Харків – це одне з надвеликих міст, котре знаходиться ближче від
-                                    усіх міст України до кордонів агресора. Дуже постраждало саме місто, а Харківська
-                                    область ще більше - там досі ідуть жорстокі бої за визволення України. Ми ретельно
-                                    підходимо до дослідження руйнування міста та селищ, щоб максимально ефективно
-                                    розробити план по відбудові та реставрації зруйнованих будівель.</p>
-                                <p class="gum__text-regular">«Харків Розквітне» це власне назва проекту фонду по
-                                    відбудові Харкова та області.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Детальніше</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Відбудувати Харків та Харківську область – це основна мета
+                                        нашої роботи фонду. Харків – це одне з надвеликих міст, котре знаходиться ближче від
+                                        усіх міст України до кордонів агресора. Дуже постраждало саме місто, а Харківська
+                                        область ще більше - там досі ідуть жорстокі бої за визволення України. Ми ретельно
+                                        підходимо до дослідження руйнування міста та селищ, щоб максимально ефективно
+                                        розробити план по відбудові та реставрації зруйнованих будівель.</p>
+                                    <p class="gum__text-regular">«Харків Розквітне» це власне назва проекту фонду по
+                                        відбудові Харкова та області.</p>
 
-                                <ul class="gum__text-regular">
-                                    Допомога фонду по проекту відбудування та реставрації полягає :
-                                    <li>- часткової або повної відбудови зруйнованої будівлі</li>
-                                    <li>- полагодження кровель</li>
-                                    <li>- реставрації фасадів будівель</li>
-                                    <li>- розбір завалів</li>
-                                    <li>- ремонтні роботи </li>
-                                    <li>- відновлення комунікаційних магістралей : вода, каналізація, електроенергія та
-                                        тепло. </li>
-                                </ul>
-                                <p class="gum__text-regular">Відбудову Харкова та Харківської області буде проводитись
-                                    після закінчення війни.</p>
+                                    <ul class="gum__text-regular">
+                                        Допомога фонду по проекту відбудування та реставрації полягає :
+                                        <li>- часткової або повної відбудови зруйнованої будівлі</li>
+                                        <li>- полагодження кровель</li>
+                                        <li>- реставрації фасадів будівель</li>
+                                        <li>- розбір завалів</li>
+                                        <li>- ремонтні роботи </li>
+                                        <li>- відновлення комунікаційних магістралей : вода, каналізація, електроенергія та
+                                            тепло. </li>
+                                    </ul>
+                                    <p class="gum__text-regular">Відбудову Харкова та Харківської області буде проводитись
+                                        після закінчення війни.</p>
+                            </div>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                             </div>
                         </div>
                     </div>
-                    <div class="gum__slider">
+                    <div class="img__box">
                         <img src="img/main-photo08.png" alt="" class="slider__img">
                     </div>
                 </div>
@@ -337,42 +344,44 @@
 
 
             <div class="gum__box">
-                <h2 class="test__title test__right">Відновлення комунікаційних магістралей у власних <span
-                        class="test__t test__t-right">будинках</span></h2>
+                <h2 class="title title__right">Відновлення комунікаційних магістралей у власних <span
+                        class="gum__t">будинках</span></h2>
                 <div class="gum__flex">
-                    <div class="gum__slider">
+                    <div class="img__box">
                         <img src="img/main-photo09.png" alt="" class="slider__img">
                     </div>
                     <div class="gum__text-box">
                         <div class="gum__text gum__text-right">
                             <p class="gum__text-bold">Відновлення пошкоджених комунікаційних магістралей власних
                                 будинків : вода, каналізація, електроенергія та тепло.</p>
-                            <span class="gum__text-bold show__more">Детальніше</span>
-                            <div class="hide__text">
-                                <p class="gum__text-regular">Відбудувати Харків та Харківську область – це основна мета
-                                    нашої роботи фонду. Харків – це одне з надвеликих міст, котре знаходиться ближче від
-                                    усіх міст України до кордонів агресора. Дуже постраждало саме місто, а Харківська
-                                    область ще більше - там досі ідуть жорстокі бої за визволення України. Ми ретельно
-                                    підходимо до дослідження руйнування міста та селищ, щоб максимально ефективно
-                                    розробити план по відбудові та реставрації зруйнованих будівель.</p>
-                                <p class="gum__text-regular">«Харків Розквітне» це власне назва проекту фонду по
-                                    відбудові Харкова та області.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Детальніше</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Відбудувати Харків та Харківську область – це основна мета
+                                        нашої роботи фонду. Харків – це одне з надвеликих міст, котре знаходиться ближче від
+                                        усіх міст України до кордонів агресора. Дуже постраждало саме місто, а Харківська
+                                        область ще більше - там досі ідуть жорстокі бої за визволення України. Ми ретельно
+                                        підходимо до дослідження руйнування міста та селищ, щоб максимально ефективно
+                                        розробити план по відбудові та реставрації зруйнованих будівель.</p>
+                                    <p class="gum__text-regular">«Харків Розквітне» це власне назва проекту фонду по
+                                        відбудові Харкова та області.</p>
 
-                                <ul class="gum__text-regular">
-                                    Допомога фонду по проекту відбудування та реставрації полягає :
-                                    <li>- часткової або повної відбудови зруйнованої будівлі</li>
-                                    <li>- полагодження кровель</li>
-                                    <li>- реставрації фасадів будівель</li>
-                                    <li>- розбір завалів</li>
-                                    <li>- ремонтні роботи </li>
-                                    <li>- відновлення комунікаційних магістралей : вода, каналізація, електроенергія та
-                                        тепло. </li>
-                                </ul>
-                                <p class="gum__text-regular">Відбудову Харкова та Харківської області буде проводитись
-                                    після закінчення війни.</p>
+                                    <ul class="gum__text-regular">
+                                        Допомога фонду по проекту відбудування та реставрації полягає :
+                                        <li>- часткової або повної відбудови зруйнованої будівлі</li>
+                                        <li>- полагодження кровель</li>
+                                        <li>- реставрації фасадів будівель</li>
+                                        <li>- розбір завалів</li>
+                                        <li>- ремонтні роботи </li>
+                                        <li>- відновлення комунікаційних магістралей : вода, каналізація, електроенергія та
+                                            тепло. </li>
+                                    </ul>
+                                    <p class="gum__text-regular">Відбудову Харкова та Харківської області буде проводитись
+                                        після закінчення війни.</p>
+                            </div>
                             </div>
                             <div class="btn__box">
-                                <!--<button class="btn btn-black">Зробити внесок</button>-->
+                                <button class="btn btn-black js-btn__modal">Зробити внесок</button>
                             </div>
                         </div>
                     </div>
@@ -414,6 +423,73 @@
 
 
 
+    </div>
+
+
+    <div class="popup__none">
+        <div class="popup__window">
+            <div class="popup__head">
+                <h4 class="popup__title">Зробити внесок</h4>
+                <button class="btn__close"><img src="img/btn__close.svg" alt=""></button>
+            </div>
+            <div class="popup__box">
+                <div class="popup__item">
+                    <input id="choose__uah" type="radio" name="choose" class="choose-radio" checked="checked"
+                            value="uah">
+                    <label for="choose__uah" class="btn__choose">У гривнях</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">АТ «ОТП Банк»</h4>
+                            <p class="regular">Реквизити фонду: <span class="data" id="p1">5375411402746387</span> <button class="btn__copy" onclick="copyToClipboard('#p1')"><img src="img/btn__copy.svg" alt=""></button><span class="copied">Скопійовано</span></p>
+                            <p class="regular">Код Одержувача: 44760805</p>
+                            <p class="regular">МФО: 300528</p>
+                            <p class="regular">Отримувач: БЛАГОДІЙНА ОРГАНІЗАЦІЯ «БЛАГОДІЙНИЙ ФОНД «ДОБРОВІЛЬНА ДОПОМОГА РОЗВИТКУ УКРАЇНИ» </p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Монобанк</h4>
+                            <p class="regular">Реквизити: <span class="data" id="p2">5375411402746387</span> <button class="btn__copy" onclick="copyToClipboard('#p2')"><img src="img/btn__copy.svg" alt=""></button><span class="copied">Скопійовано</span></p>
+                            <p class="regular">Отримувач: Камишов Олександр</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__usd" type="radio" name="choose" class="choose-radio"
+                            value="usd">
+                    <label for="choose__usd" class="btn__choose">У валюті</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">OTP BANK JSC</h4>
+                            <p class="regular">Currencies: USD, EUR, JPY, PLN, CAD, RUB, GBP, CZK, SEK, CHF, HUF</p>
+                            <p class="regular">Account: <span class="data" id="p3">UA743005280000026001000021648</span> <button class="btn__copy" onclick="copyToClipboard('#p3')"><img src="img/btn__copy.svg" alt=""></button><span class="copied">Скопійовано</span></p>
+                            <p class="regular">SWIFT code: OTPVUAUK</p>
+                            <p class="regular">Beneﬁciary: СО «CF «FADU»</p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Монобанк</h4>
+                            <p class="regular">Currencies: USD</p>
+                            <p class="regular">Account: <span class="data" id="p4">UA043052990000026203870160442</span> <button class="btn__copy" onclick="copyToClipboard('#p4')"><img src="img/btn__copy.svg" alt=""></button><span class="copied">Скопійовано</span></p>
+                            <p class="regular">SWIFT code: CHASUS33</p>
+                            <p class="regular">Beneﬁciary: KAMYSHOV OLEKSANDR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__crypto" type="radio" name="choose" class="choose-radio"
+                            value="crypto">
+                    <label for="choose__crypto" class="btn__choose">У криптовалюті</label>
+                    <div class="popup__content">
+                            <h4 class="bold">OTP BANK JSC</h4>
+                            <div class="qr__container">
+                                <img src="img/qr.svg" alt="" class="qr__img">
+                            </div>
+                            <p class="regular">BUSD Адреса для поповнень: <span class="data" id="p5">0xccc1453839dd29c5d2cacae974d3683dc01f34b</span> <button class="btn__copy" onclick="copyToClipboard('#p5')"><img src="img/btn__copy.svg" alt=""></button><span class="copied">Скопійовано</span></p>
+                            <p class="regular">Мережа: BNB Smart Chain (BEP20)</p>
+                            <p class="regular">Гаманець: Спотовий гаманець</p>
+                            <p class="regular">Минимальна сума переказу: 0,00000001 BUSD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/form.js"></script>
