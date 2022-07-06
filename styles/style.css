@@ -498,23 +498,13 @@ body {
     line-height: 1.37;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: 32px;
 }
 .gum__t {
-    position: absolute;
     display: block;
-    width: 650px;
 }
-.test__right {
+.gum__right {
     text-align: right;
-}
-.gum__t-right {
-    right: 0;
-}
-.top {
-    top: 1em;
-}
-.bottom {
-    top: 2em;
 }
 .statistic__box {
     display: flex;
@@ -551,7 +541,7 @@ body {
     flex-basis: 57.5%;
     flex-grow: 1;
     flex-shrink: 0;
-    margin-top: 20px;
+    margin-top: -105px;
 }
 .slider__img {
     width: 100%;
@@ -565,7 +555,6 @@ body {
 }
 .gum__text-box {
     margin-bottom: 48px;
-    margin-top: 132px;
     margin-right: 32px;
 }
 .gum__text-right {
@@ -759,6 +748,9 @@ body.lock {
     align-items: center;
     margin-bottom: 52px;
 }
+.btn__copy {
+    margin-left: 24px;
+}
 .btn__close, .btn__copy {
     border: none;
     background-color: transparent;
@@ -841,7 +833,6 @@ body.lock {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .content__part {
     margin-bottom: 56px;
