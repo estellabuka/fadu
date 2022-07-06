@@ -1290,9 +1290,18 @@ and (max-width: 500px) {
         font-size: 16px;
         padding: 16px 20px;
     }
+    .regular {
+        font-size: 13px;
+    }
     .data {
         display: block;
-        font-size: 10px;
         margin: 10px 0;
+    }
+    
+}
+@media only screen
+and (max-width: 374px) {
+    .data-small {
+        font-size: 11px;
     }
 }
