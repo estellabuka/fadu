@@ -130,6 +130,7 @@ body {
     font-size: 70px;
     line-height: 1.4;
     text-transform: uppercase;
+    display: block;
 }
 .none__line-height {
     line-height: 0;
@@ -140,6 +141,8 @@ body {
     line-height: 1.2;
     margin-left: 136px;
     text-transform: uppercase;
+    display: block;
+
 }
 .title {
     padding-top: 110px;
@@ -181,7 +184,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
-.btn:last-of-type {
+.btn:last-child {
     margin-right: 0;
 }
 .btn-black {
@@ -225,24 +228,25 @@ body {
 }
 .choose {
     width: 100%;
-    margin: 0 0 32px;
-    border-bottom: 1px solid #000;
     display: flex;
 }
 .choose-holder {
     flex-grow: 1;
     position: relative;
 }
-.choose-holder .btn__choose {
+.btn__choose {
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    padding: 0 33px;
+    padding: 0 33px 11px;
     cursor: pointer;
     display: block;
+    position: relative;
     text-align: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 32px;
 }
-.choose-holder .btn__choose:after {
+.btn__choose:after {
     content: "";
     width: 100%;
     height: 3px;
@@ -253,23 +257,24 @@ body {
     background: #000;
     display: none;
 }
-.choose-holder .choose-radio {
+.choose-radio {
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
 }
-.choose-holder .choose-radio:checked ~ .btn__choose {
+.choose-radio:checked ~ .btn__choose {
     font-size: 18px;
 }
-.choose-holder .btn__choose:hover {
+.btn__choose:hover {
     color: #5C5C5C;
 }
-.choose-holder .choose-radio:checked ~ .btn__choose:after {
+.choose-radio:checked ~ .btn__choose:after {
     display: block;
 }
 .input__data {
-    margin: 0 0 40px;}
+    margin: 0 0 40px;
+}
 .data__item {
     display: block;
     width: 100%;
@@ -316,8 +321,31 @@ body {
 .hide__text {
     display: none;
 }
-.show__text {
+.show__box .hide__text {
     display: block;
+}
+.show__more {
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    position: relative;
+    margin: 32px 20px 8px 0;
+}
+.show__more:hover {
+    border-bottom: 1px solid transparent;
+}
+.show__more:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 12px;
+    height: 6px;
+    background: url(../img/arrow.svg) no-repeat;
+}
+.show__box .show__more:after {
+    transform: translateY(-50%) rotate(0deg);
 }
 .info {
     padding: 120px 0;
@@ -464,14 +492,14 @@ body {
     border-bottom: 1px solid #000;
     margin-bottom: 120px;
 }
-.test__title {
+.gum__title {
     font-weight: 700;
     font-size: 70px;
     line-height: 1.37;
     text-transform: uppercase;
     position: relative;
 }
-.test__t {
+.gum__t {
     position: absolute;
     display: block;
     width: 650px;
@@ -479,7 +507,7 @@ body {
 .test__right {
     text-align: right;
 }
-.test__t-right {
+.gum__t-right {
     right: 0;
 }
 .top {
@@ -561,26 +589,6 @@ body {
 }
 .gum__text-regular:not(:last-child) {
     margin-bottom: 1em;
-}
-.show__more {
-    display: inline-block;
-    cursor: pointer;
-    border-bottom: 1px solid #000;
-    position: relative;
-    margin: 32px 20px 8px 0;
-}
-.show__more:hover {
-    border-bottom: 1px solid transparent;
-}
-.show__more:after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%) rotate(180deg);
-    width: 12px;
-    height: 6px;
-    background: url(../img/arrow.svg) no-repeat;
 }
 .btn__box {
     display: flex;
@@ -765,7 +773,6 @@ body.lock {
     top: 0;
     /* display: flex; */
     justify-content: center;
-    align-items: center;
     display: none;
 }
 .popup__none:before {
@@ -781,9 +788,12 @@ body.lock {
     position: relative;
     padding: 36px 40px;
     flex-basis: 75%;
-    min-height: 80vh;
+    height: calc(100vh - 200px);
     background-color: #EBE8E7;
     z-index: 10000;
+    overflow: auto;
+    margin: 100px 0;
+
 }
 .popup__window::after {
     content: "";
@@ -804,60 +814,25 @@ body.lock {
     width: 100%;
     margin: 0 0 32px;
     display: flex;
-
+    position: relative;
 }
 .popup__item {
-    /* flex-grow: 1; */
-    flex-shrink: 1;
-    position: relative;
-    flex-basis: 33%;
+    flex: 0 0 33%;
+    height: 420px;
 }
-.btn__choose {
-    border-bottom: 1px solid #000;
-    margin-bottom: 43px;
 
-}
 .popup__title {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 29px;
     line-height: 1.24;
 }
-.popup__item .btn__choose {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    padding: 0 33px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-}
-.popup__item .btn__choose:after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    background: #000;
-    display: none;
-}
-.popup__item .choose-radio {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
-.popup__item .choose-radio:checked ~ .btn__choose {
-    font-size: 18px;
-    font-weight: 600;
-}
-.choose-radio:checked ~ .popup__item {
-    
-}
 .popup__content {
     display: none;
-    /* margin-top: 43px; */
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
 }
 .bold {
     margin-bottom: 16px;
@@ -873,6 +848,7 @@ body.lock {
 }
 .popup__item .choose-radio:checked ~ .popup__content {
     display: block;
+
 }
 .qr__container {
     width: 142px;
@@ -882,9 +858,7 @@ body.lock {
 .qr__img {
     width: 100%;
 }
-.popup__item .choose-radio:checked ~ .btn__choose:after {
-    display: block;
-}
+
 
 /* MEDIA */
 @media only screen
@@ -915,7 +889,7 @@ and (max-width: 1450px) {
     .item__title {
         font-size: 50px;
     }
-    .test__title, .statistic__title {
+    .gum__title, .statistic__title {
         font-size: 60px;
     }
 }
@@ -957,7 +931,7 @@ and (max-width: 1250px) {
     .info__top-img {
         margin: 0;
     }
-    .test__title, .statistic__title {
+    .gum__title, .statistic__title {
         font-size: 48px;
     }
 }
@@ -1026,10 +1000,10 @@ and (max-width: 1000px) {
     .gum__flex {
         flex-direction: column;
     }
-    .test__title {
+    .gum__title {
         font-size: 42px;
     }
-    .test__t {
+    .gum__t {
         position: relative;
         display: inline;
     }
@@ -1241,7 +1215,7 @@ and (max-width: 650px) {
 }
 @media only screen
 and (max-width: 500px) {
-    .test__title, .statistic__title {
+    .gum__title, .statistic__title {
         font-size: 32px;
     }
     .par__light.h3, .info__right-img {

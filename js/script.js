@@ -6,12 +6,12 @@
   btnMoreBox.forEach((btnMore, btnMoreIndex) => {
       btnMore.addEventListener('click', ()=>{
         
-        const textArray = document.querySelectorAll('.hide__text');
+        const textArray = document.querySelectorAll('.hide__box');
 
         textArray.forEach((text, textIndex)=> {
           if(btnMoreIndex === textIndex){
             
-            text.classList.toggle('show__text');
+            text.classList.toggle('show__box');
             
           }
         })
