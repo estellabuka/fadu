@@ -681,12 +681,13 @@ body {
 }
 .next {
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 0;
+    right: 0;
     width: 66px;
     height: 66px;
     border: 0;
     background: url(../img/btn-next.svg) no-repeat;
+    background-size: contain;
     font-size: 0;
     cursor: pointer;
 }
@@ -1113,9 +1114,6 @@ and (max-width: 1000px) {
 }
 @media only screen
 and (max-width: 700px) {
-    .info__text-par, .statistic__item, .hide__text, .gum__text-bold, .foot__p {
-        text-align: justify;
-    }
     .ui-tabs {
         margin-bottom: 32px;
     }
@@ -1171,16 +1169,9 @@ and (max-width: 700px) {
     .tab-text {
         padding: 0 0 24px 0;
     }
-    .tab-text p {
-        text-align: justify;
-    }
     .tab-title {
         padding-right: 68px;
         padding-bottom: 20px;
-    }
-    .next {
-        top: -16px;
-        right: 0;
     }
     .form {
         max-width: unset;
@@ -1190,6 +1181,14 @@ and (max-width: 700px) {
         font-size: 16px;
         line-height: 20px;
         padding-bottom: 4px;
+    }
+    .tab-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .next {
+        width: 48px;
+        height: 48px;
     }
 }
 @media only screen
@@ -1218,17 +1217,15 @@ and (max-width: 650px) {
 }
 @media only screen
 and (max-width: 500px) {
-    .title {
-        font-size: 32px;
+    .title, .title__right {
+        font-size: 20px;
+        text-align: center;
     }
     .par__light.h3, .info__right-img, .main__title{
         margin-bottom: 32px;
     }
     .info__top-par .par__light {
         font-size: 35px;
-    }
-    .title__center {
-        text-align: right;
     }
     .statistic {
         margin-bottom: 32px;
@@ -1241,5 +1238,19 @@ and (max-width: 500px) {
     }
     .par__bold {
         font-size: 40px;
+    }
+    .choose-holder .btn__choose {
+        padding: 0 10px 4px;
+    }
+    .statistic__item {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .item__title {
+        font-size: 24px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 16px 20px;
     }
 }
