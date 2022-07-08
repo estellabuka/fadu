@@ -602,12 +602,12 @@ body {
 }
 .gum__help {
     padding-bottom: 80px;
-    border-bottom: 1px solid #000;
 }
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 32px 0;
+    border-top: 1px solid #000;
 }
 .social__media {
     /* flex: 0 0 512px; */
@@ -851,6 +851,133 @@ body.lock {
     color: #5C5C5C;
     font-size: 14px;
 }
+
+
+/* ABOUT US */
+
+
+.title__about {
+    margin: 56px 0;
+}
+.documents .title__light, .our__team .title__light {
+    margin-bottom: 64px;
+}
+section {
+    margin-bottom: 200px;
+}
+.about__us {
+    background-image: url(../img/about2.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+    background-position-x: right;
+    background-size: 720px 336px;
+}
+.about__us .main__title {
+    display: inline-block;
+    margin-left: 170px;
+    padding-top: 0;
+}
+.about__us .btn {
+    display: block;
+}
+.title__img {
+    width: 240px;
+    height: 288px;
+    display: inline-block;
+}
+.img__bg {
+    width: 100%;
+}
+.info__flex {
+    align-items: flex-start;
+}
+.info__right-img {
+    width: 918px;
+    height: 548px;
+}
+.info__right-img img {
+    width: 100%;
+}
+.left__about {
+    padding: 0px;
+    margin-left: 170px;
+    margin-right: 0;
+} 
+.left__about:after {
+    display: none;
+}
+.left__about:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* slider */
+
+.slick-arrow {
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    display: block;
+    z-index: 100000;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.slick-prev {
+    background-image: url(../img/slider/back.svg);
+    left: -118px;
+}
+.slick-next {
+    background-image: url(../img/slider/next.svg);
+    right: -118px;
+}
+.slider__img-box {
+    margin-right: 32px;
+}
+.slider__img {
+    width: auto;
+    height: 530px;
+}
+.our__team .title__light {
+    text-align: right;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: -104px;
+}
+.gallery__item {
+    margin: 0 0 104px 32px;
+}
+.gallery__item:nth-child(3n + 1) {
+    margin: 0;
+}
+.gallery__img-box {
+    width: 376px;
+    height: 480px;
+    margin-bottom: 24px;
+}
+.gallery__img {
+    width: 100%;
+}
+.gallery__text {
+    font-size: 29px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* MEDIA */
 @media only screen
