@@ -71,7 +71,7 @@ body {
     line-height: 1.2;
 }
 .container {
-    max-width: 1600px;
+    max-width: 1696px;
     margin: 0 auto;
     padding: 0 48px;
 }
@@ -420,7 +420,7 @@ body {
     flex-basis: 35%;
     margin-right: 20px;
     position: relative;
-    padding: 0 80px 0 0;
+    padding: 0 4% 0 0;
 }
 .info__left:after {
     content: "";
@@ -538,7 +538,7 @@ body {
     flex-shrink: 0;
     margin-top: -105px;
 }
-.slider__img {
+.content__img {
     width: 100%;
 }
 .gum__flex {
@@ -602,12 +602,12 @@ body {
 }
 .gum__help {
     padding-bottom: 80px;
-    border-bottom: 1px solid #000;
 }
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 32px 0;
+    border-top: 1px solid #000;
 }
 .social__media {
     /* flex: 0 0 512px; */
@@ -772,7 +772,7 @@ body.lock {
 .popup__window {
     position: relative;
     padding: 36px 40px;
-    flex-basis: 75%;
+    flex-basis: 90%;
     height: calc(100vh - 200px);
     background-color: #EBE8E7;
     z-index: 10000;
@@ -819,6 +819,11 @@ body.lock {
     left: 0;
     width: 100%;
 }
+.popup__content-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
 .bold {
     margin-bottom: 16px;
 }
@@ -827,9 +832,19 @@ body.lock {
     display: flex;
     align-items: center;
 }
+.cript {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .data {
     margin-left: 5px;
     margin-right: 24px;
+}
+.cript .data {
+    margin-left: 0;
+    margin-right: 0;
+    word-break: break-all;
 }
 .content__part {
     margin-bottom: 56px;
@@ -851,6 +866,122 @@ body.lock {
     color: #5C5C5C;
     font-size: 14px;
 }
+
+
+/* ABOUT US */
+
+
+.title__about {
+    margin: 56px 0;
+}
+.documents .title__light, .our__team .title__light {
+    margin-bottom: 64px;
+}
+.documents {
+    margin-bottom: 200px;
+}
+.about__us {
+    background-image: url(../img/about2.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+    background-position-x: right;
+    background-size: 720px 336px;
+}
+.about__us .main__title {
+    display: inline-block;
+    padding-top: 0;
+}
+.about__us .btn {
+    display: block;
+}
+.title__img {
+    width: 240px;
+    height: 288px;
+    display: inline-block;
+}
+.img__bg {
+    width: 100%;
+}
+.info__flex {
+    align-items: flex-start;
+}
+.left__about {
+    padding: 0 0 0 4%;
+    margin-right: 0;
+} 
+.left__about:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* slider */
+.slick-slider {
+    margin: 0 90px;
+}
+.slick-arrow {
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    display: block;
+    z-index: 100000;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.slick-prev {
+    background-image: url(../img/slider/back.svg);
+    left: -90px;
+}
+.slick-next {
+    background-image: url(../img/slider/next.svg);
+    right: -90px;
+}
+.slider__img-box {
+    margin: 0 16px;
+}
+.slider__img {
+    width: auto;
+    height: 530px;
+}
+.our__team .title__light {
+    text-align: right;
+}
+.gallery {
+    margin: 0 -16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.gallery__item {
+    flex: 0 0 25%;
+    width: 25%;
+    padding: 0 16px 104px;
+}
+.gallery__img-box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+.gallery__img {
+    width: 100%;
+}
+.gallery__text {
+    font-size: 29px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* MEDIA */
 @media only screen
@@ -887,6 +1018,9 @@ and (max-width: 1450px) {
 }
 @media only screen
 and (max-width: 1425px) {
+    .title__img {
+        display: none;
+    }
     .help {
         margin-bottom: 0;
     }
@@ -961,6 +1095,9 @@ and (max-width: 1200px) {
 }
 @media only screen
 and (max-width: 1130px) {
+    .about__us {
+        background-position-y: -120px;
+    }
     .title__bold {
         font-size: 62px;
     }
@@ -1099,8 +1236,8 @@ and (max-width: 1000px) {
         background: none;
     }
     .info__left {
-        padding-right: 0;
-        margin-right: 0;
+        padding: 0;
+        margin: 0;
     }
     .info__left:after {
         display: none;
@@ -1123,8 +1260,11 @@ and (max-width: 1000px) {
     .popup__item {
         height: auto;
     }
-    .regular {
+    .popup__content-row {
         display: block;
+    }
+    .popup__content-column {
+        margin: 0 0 32px;
     }
     .data {
         margin-left: 0;
@@ -1146,6 +1286,39 @@ and (max-width: 1000px) {
     }
     .popup__item .choose-radio:checked ~ .btn__choose:after {
         display: none;
+    }
+    .slick-slider {
+        margin: 0;
+    }
+    .slider__img {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+    }
+    
+    .slick-prev {
+        width: 48px;
+        height: 48px;
+        left: -24px;
+    }
+    .slick-next {
+        width: 48px;
+        height: 48px;
+        right: -24px;
+    }
+    .documents {
+        margin: 32px 0;
+    }
+    .gallery__item {
+        width: 50%;
+        flex-basis: 50%;
+        padding-bottom: 32px;
+    }
+    .gallery__img-box {
+        margin-bottom: 5px;
+    }
+    .gallery__text {
+        font-size: 16px;
     }
 }
 @media only screen
@@ -1228,6 +1401,19 @@ and (max-width: 700px) {
         height: 100vh;
         margin: 0;
     }
+    .slider__img {
+        max-width: 500px;
+    }
+    .slick-prev {
+        width: 48px;
+        height: 48px;
+        left: 4px;
+    }
+    .slick-next {
+        width: 48px;
+        height: 48px;
+        right: 4px;
+    }
 }
 @media only screen
 and (max-width: 650px) {
@@ -1251,6 +1437,13 @@ and (max-width: 650px) {
     }
     .help__flex {
         margin-bottom: 32px;
+    }
+    .slider__img {
+        max-width: 320px;
+    }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
     }
 }
 @media only screen
@@ -1297,7 +1490,10 @@ and (max-width: 500px) {
         display: block;
         margin: 10px 0;
     }
-    
+    .gallery__item {
+        width: 100%;
+        flex-basis: 100%;
+    }
 }
 @media only screen
 and (max-width: 374px) {
