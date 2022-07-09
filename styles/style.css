@@ -749,7 +749,7 @@ body.lock {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     left: 0;
     top: 0;
     /* display: flex; */
@@ -863,6 +863,21 @@ body.lock {
     font-size: 14px;
 }
 
+.swal2-confirm {
+    /* border: none;
+    padding: 10px 20px;
+    border-radius: 57px;
+    font-size: 14px; */
+    display: none;
+
+}
+/* .swal2-title {
+    font-size: 18px;
+    font-weight: 400;
+} */
+/* .swal2-popup {
+    width: 18em;
+} */
 
 /* ABOUT US */
 
@@ -915,6 +930,10 @@ body.lock {
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+
+
 
 /* slider */
 .slick-slider {

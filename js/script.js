@@ -52,18 +52,50 @@ function copyToClipboard(element) {
 const btnCopyAll = document.querySelectorAll('.btn__copy');
 btnCopyAll.forEach((btnCopy, btnIndex) => {
   btnCopy.addEventListener('click', ()=> {
-    document.querySelectorAll('.copied').forEach((copyItem, copyIndex) =>{
-      if(btnIndex === copyIndex) {
-        copyItem.style.display = 'block';
+    // document.querySelectorAll('.copied').forEach((copyItem, copyIndex) =>{
+    //   if(btnIndex === copyIndex) {
+    //     copyItem.style.display = 'block';
 
-        setTimeout(dissapearText, 1000);
-      }
 
-      function dissapearText() {
-        copyItem.style.display = 'none';
-      }
+
+
+
+    //     setTimeout(dissapearText, 1000);
+    //   }
+
+    //   function dissapearText() {
+    //     copyItem.style.display = 'none';
+    //   }
       
+    // })
+
+    
+    function dissapearText() {
+      document.querySelector('.swal2-container').style.display = 'none';
+      // document.querySelector('.swal2-confirm').style.display = 'none';
+    }
+
+    setTimeout(dissapearText, 1500);
+
+    // document.querySelector('.swal2-confirm').style.display = 'none';
+
+
+    Swal.fire({
+      position: 'center',
+      title: 'Скопійовано',
+      background: 'rgba(0, 0, 0, 0.7)',
+      color: '#EBE8E7',
+      buttonsStyling: false
     })
 
+    document.querySelector('.swal2-confirm').style.display = 'none';
+    const popupAlert = document.querySelector('.swal2-popup');
+    popupAlert.style.width = '18em';
+
+
+    const titleAlert = document.querySelector('.swal2-title');
+    titleAlert.style.fontSize = '16px';
+    titleAlert.style.fontWeight = '400';
+    titleAlert.style.padding = '10px 0 0 0';
   })
 })
