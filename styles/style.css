@@ -95,16 +95,12 @@ body {
     text-transform: uppercase;
     color: #000;
 }
-.btn__lang:first-child {
-    margin: 0;
-    padding-left: 0;
-    border: 0;
-}
 .btn__lang:hover {
     color: #5C5C5C;
 }
 .nav__box {
     display: flex;
+    align-items: center;
 }
 .nav__item {
     font-size: 18px;
@@ -1323,6 +1319,17 @@ and (max-width: 1000px) {
 }
 @media only screen
 and (max-width: 700px) {
+    .header {
+        align-items: center;
+    }
+    .logo {
+        display: block;
+        width: 80px;
+        flex: 0 0 80px;
+    }
+    .logo img {
+        width: 100%;
+    }
     .ui-tabs {
         margin-bottom: 32px;
     }
@@ -1423,11 +1430,10 @@ and (max-width: 650px) {
     .title__light {
         font-size: 35px;
     }
-    .nav__item:not(:last-child) {
-        margin-right: 16px;
-    }
-    .nav__link {
-        font-size: 16px;
+    .nav__link,
+    .nav__item,
+    .btn__lang {
+        font-size: 14px;
     }
     .logo {
         margin-right: 16px;
@@ -1448,6 +1454,13 @@ and (max-width: 650px) {
 }
 @media only screen
 and (max-width: 500px) {
+    .header {
+        display: block;
+        padding: 20px 0;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
     .info__right-img, .main__title{
         margin-bottom: 32px;
     }
