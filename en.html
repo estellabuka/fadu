@@ -5,82 +5,563 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>FADU</title>
 </head>
 
 <body>
-    <div class="wrapper">
+
+    <div class="container">
         <header class="header">
-            <div class="logo">
+            <a href="/en" class="logo">
                 <img src="img/logo.svg" alt="">
-            </div>
-            <div class="language">
-                <a href="/" class="btn__lang">UKR</a>
-                <a href="/en" class="btn__lang">ENG</a>
-            </div>  
+            </a>
+            <ul class="nav__box">
+                <li class="nav__item">
+                    <a href="/aboutus_en.html" class="nav__link">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#tabs" class="nav__link">Our projects</a>
+                </li>
+                <li class="nav__item language">
+                    <a href="/" class="btn__lang">UKR</a>
+                    <a href="/en" class="btn__lang">ENG</a>
+                </li>
+            </ul>
         </header>
-        <main class="container">
-            <h2 class="big__title">Page is under the construction</h2>
-            <section class="content">
-                <div class="main">
-                    <div class="main__content">
-                        <h2 class="title">Freewill Aid Development of Ukraine</h2>
-                        <div class="main__text">
-                            <p class="text__paragraph">On February 24, 2022, our lives changed.</p>
-                            <p class="text__paragraph"> War wants to take away our home - Ukraine. Many people will not return home today. The more of us, the stronger we are.</p>
-                            <p class="text__paragraph">The greatest desire today is to stay alive and help the homeland to be bright, loved, and free again.  We are people who are not indifferent to the future of Ukraine. Having gathered all our efforts, we created the Fund of Voluntary Assistance for the Development of Ukraine.  We are the ones who stayed in our hometown - Kharkiv, to bring our victory closer together as soon as possible. Let's win together!</p>
-                            <p class="text__paragraph">Every help is a saved life!</p>
-                        </div>
+
+        <div class="title__box">
+            <h2 class="main__title">
+                <span class="title__light">Recovery Fund</span>
+                <span class="title__bold">Kharkiv region</span>
+                <span class="title__light none__line-height">&</hspan3>
+                    <span class="title__bold">Kharkiv</span>
+            </h2>
+        </div>
+        <section class="help">
+            <div class="help__flex">
+                <div class="help__flex-container">
+                    <button class="btn btn-black js-btn__modal">Donate</button>
+
+                    <div class="help__img-container">
+                        <img class="help__img" src="img/main-photo02.png" alt="">
                     </div>
                 </div>
                 <div class="form">
                     <form action="#" id="form" class="form__body">
-                        <h2 class="form__title">Do you have questions or want to join?</h2>
-                        <h2 class="form__title">Contact us:</h2>
                         <div class="choose">
                             <div class="choose-holder">
-                                <input id="choose-can" type="radio" name="choose" class="choose-radio" checked="checked" value="can">
+                                <input id="choose-can" type="radio" name="choose" class="choose-radio" checked="checked"
+                                    value="can">
                                 <label for="choose-can" class="btn__choose">Want to help</label>
-                            </div>    
+                            </div>
                             <div class="choose-holder">
                                 <input id="choose-need" type="radio" name="choose" class="choose-radio" value="need">
                                 <label for="choose-need" class="btn__choose">Need help</label>
-                            </div>    
+                            </div>
                         </div>
                         <div class="input__data">
-                            <input type="text" class="data__item _req" placeholder="Імʼя/ Назва організації" value="" name="name">
-                            <input type="email" name="email" class="data__item _req _email" placeholder="Емейл" value="">
-                            <input type="tel" class="data__item _req" name="tel" placeholder="Номер телефону" value="">
+                            <input type="text" class="data__item _req" placeholder="Name of the organization" value=""
+                                name="name">
+                            <input type="email" name="email" class="data__item _req _email" placeholder="Email"
+                                value="">
+                            <input type="tel" class="data__item _req" name="tel" placeholder="Phone number" value="">
                         </div>
-                        <input type="submit" class="btn__send" value="Send">
+                        <input type="submit" class="btn" value="Send">
                     </form>
-                </div>   
-            </section>
-            <footer class="footer">
-                <div class="footer__contacts">
-                    <h2 class="contacts__title">Contacts</h2>
-                    <div class="contacts__box">
-                        <a class="contact__item" href="tel:+380577555999">Phone +38 (057) 75-55-999</a>
-                        <a class="contact__item" href="mailto:info@fadu.in.ua">Email: info@fadu.in.ua</a>
-                        <p>Yaroslava Mudrogo 16A</p>
-                        <p>Kharkiv 61002</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="content">
+            <ul class="content__box">
+                <li class="content__item">humanitarian aid to the local population</li>
+                <li class="content__item">humanitarian aid to the military</li>
+                <li class="content__item">reconstruction & restoration of destroyed houses</li>
+                <li class="content__item">restoration of communication highways in houses</li>
+                <li class="content__item">landscape restoration</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <div class="info__top">
+                <div class="info__top-img">
+                    <img class="top__img" src="img/main-photo03.png" alt="">
+                </div>
+                <div class="info__top-par">
+                    <p class="par__bold">7 144 500 &#8372</p>
+                    <p class="par__light">distributed</p>
+                </div>
+            </div>
+            <div class="info__flex">
+                <div class="info__left">
+                    <h3 class="title">About fund</h3>
+                    <div class="info__text">
+                        <p class="info__text-par">The charitable organization "Charitable Foundation " Freewill Aid
+                            Development of Ukraine" is a fund for targeted assistance in the restoration of the
+                            Ukrainian city Kharkiv. Our foundation's goal is to help people get their homes back.</p>
+                        <p class="info__text-par">Kharkiv is a large city in Ukraine, which suffered greatly from the
+                            actions of the Russian invaders. The city is closest to all large cities of Ukraine to the
+                            border with the aggressor. Most of all, the war makes the unprotected population suffer in
+                            the world: children, the elderly people, families with many children, etc.</p>
+                        <p class="info__text-par">Can be seen today , 30% of residential buildings in Kharkiv are
+                            destructive, and in Kharkiv region almost 40%.</p>
+                        <p class="info__text-par">During the war, the Foundation provides humanitarian assistance to
+                            people and the military - this is the first step towards the restoration of Kharkov.</p>
+                    </div>
+                    <!--<button class="btn">Читати детальніше</button>-->
+
+                    <div class="info__left-img">
+                        <img class="left__img" src="img/main-photo05.png" alt="">
                     </div>
                 </div>
-                <div class="social">
-                    <a class="social__link" href="https://www.instagram.com/fadu_official_ua/" target="_blank">
-                        <img src="img/instagram.svg" alt="">
-                    </a>
-                    <a class="social__link" href="https://www.facebook.com/FreewillAidDevelopmentofUkraine" target="_blank">
-                        <img src="img/fb.svg" alt="">
-                    </a>
-                </div>    
-            </footer>
-        </main>
-    </div>    
-    <div class="parallax"></div>
+                <div class="info__right">
+                    <div class="info__right-img">
+                        <img class="right__img" src="img/main-photo04.png" alt="">
+                    </div>
+
+                    <div id="tabs">
+                        <div id="tabs-1">
+                            <div class="tab-text">
+                                <h3 class="tab-title">Reconstruction of Preschools and Schools</h3>
+                                <p>The purpose of the project is reconstruction after shelling of educational buildings,
+                                    adaptation and upgrade to European standards. Volume of reconstruction - 10
+                                    establishments at the rate of 200 000 dollars / 1 object. Total: $ 2 million.</p>
+                            </div>
+                            <img src="img/img-tab01.png">
+                        </div>
+                        <div id="tabs-2">
+                            <div class="tab-text">
+                                <h3 class="tab-title">Reconstruction of Kharkiv & Kharkiv reg.</h3>
+                                <p>Multi-storey buildings are suitable for reconstruction. The volume of reconstruction
+                                    - 100 houses at the rate - from 85 000 dollars / 1 house. Total: $ 8.5 million</p>
+                            </div>
+                            <img src="img/img-tab02.png">
+                        </div>
+                        <div id="tabs-3">
+                            <div class="tab-text">
+                                <h3 class="tab-title">"Social Clothing"</h3>
+                                <p>Although the enterprises are currently closed, there is a readiness to establish 3
+                                    full-fledged productions on the territory of Kharkiv, with the possibility to
+                                    involve about 1500 people in 3 shifts. Tailoring for social workers: doctors,
+                                    military, etc.</p>
+                            </div>
+                            <img src="img/img-tab03.png">
+                        </div>
+                        <div id="tabs-4">
+                            <div class="tab-text">
+                                <h3 class="tab-title">animal care</h3>
+                                <p>The purpose of the project is to save stray animals. Scope of construction - 1
+                                    humanitarian center for socialization and veterinary care, adaptation to
+                                    resettlement in other parts of Ukraine and European countries.</p>
+                            </div>
+                            <img src="img/img-tab04.png">
+                        </div>
+                        <div id="tabs-5">
+                            <div class="tab-text">
+                                <h3 class="tab-title">Prosthetics for Armed Forces & civilians</h3>
+                                <p>Make a prosthetic rehabilitation center for the military and civilians who lost body
+                                    parts during the war. We want to provide a quality service in the form of
+                                    prosthetics for various parts of the body.</p>
+                            </div>
+                            <img src="img/img-tab05.png">
+                        </div>
+                        <button class="next">&gt;</button>
+                        <ul>
+                            <li><a href="#tabs-1">
+                                    <img src="img/thumb01.png">
+                                    <storng class="thumb-title">Reconstruction of Preschools and Schools</storng>
+                                </a></li>
+                            <li><a href="#tabs-2">
+                                    <img src="img/thumb02.png">
+                                    <storng class="thumb-title">Reconstruction of Kharkiv & Kharkiv reg.</storng>
+                                </a></li>
+                            <li><a href="#tabs-3">
+                                    <img src="img/thumb03.png">
+                                    <storng class="thumb-title">"Social Clothing"</storng>
+                                </a></li>
+                            <li><a href="#tabs-4">
+                                    <img src="img/thumb04.png">
+                                    <storng class="thumb-title">animal care</storng>
+                                </a></li>
+                            <li><a href="#tabs-5">
+                                    <img src="img/thumb05.png">
+                                    <storng class="thumb-title">Prosthetics for Armed Forces & civilians</storng>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="statistic">
+            <h2 class="title__center title">statistics on Kharkiv and the region</h2>
+            <ul class="statistic__box">
+                <li class="statistic__item">
+                    <span class="item__title">3100</span>
+                    destroyed buildings in Kharkiv
+                </li>
+                <li class="statistic__item">
+                    <span class="item__title">12000</span>
+                    destroyed houses in the Kharkiv region
+                </li>
+                <li class="statistic__item">
+                    <span class="item__title">54</span>
+                    destroyed educational institutions
+                </li>
+                <li class="statistic__item">
+                    <span class="item__title">4.1 mln</span>
+                    people evacuated from Kharkiv and the region
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <section class="gum__help">
+            <div class="gum__box">
+                <h3 class="title">
+                    Humanitarian aid
+                    to the local
+                    <span class="gum__t">population</span>
+                </h3>
+                <div class="gum__flex">
+                    <div class="gum__text-box">
+                        <div class="gum__text gum__text-left">
+                            <p class="gum__text-bold">Providing the fund with the most necessary things for the
+                                population: food, clothing, personal hygiene products, animal feed.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Read more</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">The main objective of the humanitarian direction of the
+                                        Fund's assistance is to improve the state of humanitarian support for the
+                                        population of Kharkiv and the Kharkiv region.</p>
+                                    <p class="gum__text-regular">Humanitarian assistance from the foundation can be
+                                        obtained by filling out the questionnaire "Humanitarian Need for the
+                                        Population". We provide humanitarian assistance in the following areas: food,
+                                        clothing, animal feed, medicines, products for children and toddlers.</p>
+                                    <p class="gum__text-regular">We are working on expanding assistance from the fund so
+                                        that we can help as many people as possible, but we are dependent on cash and
+                                        commodity supplies.</p>
+                                    <p class="gum__text-regular">We ask you to approach help with understanding, we try
+                                        to do good deeds according to our possibilities.</p>
+                                </div>
+                            </div>
+                            <div class="btn__box">
+                                <button class="btn btn-black js-btn__modal">Donate</button>
+                                <a href="#form" class="btn">Get help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__box">
+                        <img src="img/main-photo06.png" alt="" class="content__img">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gum__box">
+                <h2 class="title title__right">Humanitarian aid for<span class="gum__t">the military</span></h2>
+                <div class="gum__flex">
+                    <div class="img__box">
+                        <img src="img/main-photo07.png" alt="" class="content__img">
+                    </div>
+                    <div class="gum__text-box">
+                        <div class="gum__text gum__text-right">
+                            <p class="gum__text-bold">Support of our defenders with food, comfortable clothes,
+                                arrangement of berths, tools, building materials, etc.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Read more</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">The military of Ukraine is the pride of the nation. We
+                                        consider it necessary to support our defenders by making their conditions at the
+                                        front more comfortable.</p>
+                                    <p class="gum__text-regular">We provide humanitarian assistance in the following
+                                        areas: food, clothing, ammunition, building materials, tools (shovels, hand
+                                        saws, axes, etc.), beds, etc.</p>
+                                    <p class="gum__text-regular">The Foundation's humanitarian aid can be obtained by
+                                        filling out the Humanitarian Need for the Military questionnaire, or by calling
+                                        the phone number to find out more about the Fund's assistance. </p>
+                                    <p class="gum__text-regular">We are working to expand assistance from the Ukrainian
+                                        military fund so that we can help as much as possible, but we are dependent on
+                                        money and goods.</p>
+                                    <p class="gum__text-regular">We ask you to approach help with understanding, we try
+                                        to do good deeds according to our possibilities.</p>
+                                    <p class="gum__text-regular">Glory to Ukraine! Glory to the heroes!</p>
+                                </div>
+                            </div>
+                            <div class="btn__box">
+                                <button class="btn btn-black js-btn__modal">Donate</button>
+                                <a href="#form" class="btn">Get help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gum__box">
+                <h2 class="title">Reconstruction & restoration of residential
+                    <span class="gum__t">buildings</span>
+                </h2>
+                <div class="gum__flex">
+                    <div class="gum__text-box text-box__left">
+                        <div class="gum__text gum__text-left">
+                            <p class="gum__text-bold">Assistance to people in rebuilding houses, burned apartments from
+                                bombing, etc.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Read more</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Rebuilding Kharkiv and Kharkiv region is the main goal
+                                        of our fund's work. Kharkiv is one of the largest cities, which is closer than
+                                        all the cities of Ukraine to the borders with the aggressor. The city itself has
+                                        suffered greatly, and the Kharkiv region even more - there are still fierce
+                                        battles for the liberation of Ukraine. We are carefully approaching the study of
+                                        the destruction of cities and towns in order to effectively develop a plan for
+                                        the reconstruction and restoration of destroyed buildings.</p>
+                                    <p class="gum__text-regular">"Kharkiv Rozkvitne" is the actual name of the project
+                                        of the fund for the reconstruction of Kharkiv and the region.</p>
+
+                                    <ul class="gum__text-regular">
+                                        The Fund's assistance in the reconstruction and restoration project is:
+                                        <li>- partial or complete reconstruction of the destroyed building</li>
+                                        <li>- repair of roofs</li>
+                                        <li>- restoration of building facades</li>
+                                        <li>- analysis of blockages</li>
+                                        <li>- repairs</li>
+                                        <li>- restoration of communication highways: water, sewerage, electricity and
+                                            heat.</li>
+                                    </ul>
+                                    <p class="gum__text-regular">Reconstruction of Kharkiv and Kharkiv region will take
+                                        place after the war.</p>
+                                </div>
+                            </div>
+                            <div class="btn__box">
+                                <button class="btn btn-black js-btn__modal">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img__box">
+                        <img src="img/main-photo08.png" alt="" class="content__img">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="gum__box">
+                <h2 class="title title__right">Restoration of communication highways in<span class="gum__t">private
+                        houses</span></h2>
+                <div class="gum__flex">
+                    <div class="img__box">
+                        <img src="img/main-photo09.png" alt="" class="content__img">
+                    </div>
+                    <div class="gum__text-box">
+                        <div class="gum__text gum__text-right">
+                            <p class="gum__text-bold">Restoration of damaged communication lines of private houses:
+                                water, sewerage, electricity and heat.</p>
+                            <div class="hide__box">
+                                <span class="gum__text-bold show__more">Read more</span>
+                                <div class="hide__text">
+                                    <p class="gum__text-regular">Rebuilding Kharkiv and Kharkiv region is the main goal
+                                        of our fund's work. Kharkiv is one of the largest cities, which is closer than
+                                        all the cities of Ukraine to the borders with the aggressor. The city itself has
+                                        suffered greatly, and the Kharkiv region even more - there are still fierce
+                                        battles for the liberation of Ukraine. We are carefully approaching the study of
+                                        the destruction of cities and towns in order to effectively develop a plan for
+                                        the reconstruction and restoration of destroyed buildings.</p>
+                                    <p class="gum__text-regular">"Kharkiv Rozkvitne" is the actual name of the project
+                                        of the fund for the reconstruction of Kharkiv and the region.</p>
+
+                                    <ul class="gum__text-regular">
+                                        The Fund's assistance in the reconstruction and restoration project is:
+                                        <li>- partial or complete reconstruction of the destroyed building</li>
+                                        <li>- repair of roofs</li>
+                                        <li>- restoration of building facades</li>
+                                        <li>- analysis of blockages</li>
+                                        <li>- repairs</li>
+                                        <li>- restoration of communication highways: water, sewerage, electricity and
+                                            heat.</li>
+                                    </ul>
+                                    <p class="gum__text-regular">Reconstruction of Kharkiv and Kharkiv region will take
+                                        place after the war.</p>
+                                </div>
+                                <div class="btn__box">
+                                    <button class="btn btn-black js-btn__modal">Donate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="social__media">
+                <a href="/en" class="logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <p class="foot__p">The charitable organization "Charitable Foundation " Freewill Aid Development of
+                    Ukraine" is a fund for targeted assistance in the restoration of the Ukrainian city Kharkiv. Our
+                    foundation's goal is to help people get their homes back.
+                </p>
+                <ul class="foot__list">
+                    <li class="foot__list-item">
+                        <a class="social__link" href="https://www.instagram.com/fadu_official_ua/" target="_blank">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="foot__list-item">
+                        <a class="social__link" href="https://www.facebook.com/FreewillAidDevelopmentofUkraine"
+                            target="_blank">
+                            <img src="img/fb.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p class="info__box-title">Copywriting: All rights reserved.</p>
+            </div>
+            <div class="footer__info">
+                <h3 class="info__box-title">Areas of work</h3>
+                <p class="info__box-text">Humanitarian aid to the local population</p>
+                <p class="info__box-text">Humanitarian aid for the military</p>
+                <p class="info__box-text">Reconstruction & restoration of residential buildings</p>
+                <p class="info__box-text">Restoration of communication highways in private houses</p>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+
+    <div class="popup__none">
+        <div class="popup__window">
+            <div class="popup__head">
+                <h4 class="popup__title">Donate</h4>
+                <button class="btn__close"><img src="img/btn__close.svg" alt=""></button>
+            </div>
+            <div class="popup__box">
+                <div class="popup__item">
+                    <input id="choose__uah" type="radio" name="choose" class="choose-radio" checked="checked"
+                        value="uah">
+                    <label for="choose__uah" class="btn__choose">In hryvnias</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">JSC "OTP Bank"</h4>
+                            <p class="regular">Account: <span class="data" id="p1">5375411402746387</span>
+                                <button class="btn__copy" onclick="copyToClipboard('#p1')"><img src="img/btn__copy.svg"
+                                        alt=""></button><span class="copied">Copied</span>
+                            </p>
+                            <p class="regular">Recipient Code: 44760805</p>
+                            <p class="regular">MFI: 300528</p>
+                            <p class="regular">Beneﬁciary: БЛАГОДІЙНА ОРГАНІЗАЦІЯ «БЛАГОДІЙНИЙ ФОНД «ДОБРОВІЛЬНА ДОПОМОГА
+                                РОЗВИТКУ УКРАЇНИ» </p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Monobank</h4>
+                            <p class="regular">Account: <span class="data" id="p2">5375411402746387</span> <button
+                                    class="btn__copy" onclick="copyToClipboard('#p2')"><img src="img/btn__copy.svg"
+                                        alt=""></button><span class="copied">Copied</span></p>
+                            <p class="regular">Beneﬁciary:  Kamyshov Oleksandr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__usd" type="radio" name="choose" class="choose-radio" value="usd">
+                    <label for="choose__usd" class="btn__choose">In currency</label>
+                    <div class="popup__content">
+                        <div class="content__part">
+                            <h4 class="bold">OTP BANK JSC</h4>
+                            <p class="regular">Currencies: USD, EUR, JPY, PLN, CAD, RUB, GBP, CZK, SEK, CHF, HUF</p>
+                            <p class="regular">Account: <span class="data" id="p3">UA743005280000026001000021648</span>
+                                <button class="btn__copy" onclick="copyToClipboard('#p3')"><img src="img/btn__copy.svg"
+                                        alt=""></button><span class="copied">Copied</span>
+                            </p>
+                            <p class="regular">SWIFT code: OTPVUAUK</p>
+                            <p class="regular">Beneﬁciary: СО «CF «FADU»</p>
+                        </div>
+                        <div class="content__part">
+                            <h4 class="bold">Monobank</h4>
+                            <p class="regular">Currencies: USD</p>
+                            <p class="regular">Account: <span class="data" id="p4">UA043052990000026203870160442</span>
+                                <button class="btn__copy" onclick="copyToClipboard('#p4')"><img src="img/btn__copy.svg"
+                                        alt=""></button><span class="copied">Copied</span>
+                            </p>
+                            <p class="regular">SWIFT code: CHASUS33</p>
+                            <p class="regular">Beneﬁciary: KAMYSHOV OLEKSANDR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__item">
+                    <input id="choose__crypto" type="radio" name="choose" class="choose-radio" value="crypto">
+                    <label for="choose__crypto" class="btn__choose">In cryptocurrency</label>
+                    <div class="popup__content">
+                        <div class="popup__content-row">
+                            <div class="popup__content-column">
+                                <h4 class="bold">OTP BANK JSC</h4>
+                                <div class="qr__container">
+                                    <img src="img/qr.svg" alt="" class="qr__img">
+                                </div>
+                                <p class="cript">BUSD Адреса для поповнень: <span class="data data-small"
+                                        id="p5">0xccc1453839dd29c5d2cacae974d3683dc01f34b</span> <button
+                                        class="btn__copy" onclick="copyToClipboard('#p5')"><img src="img/btn__copy.svg"
+                                            alt=""></button><span class="copied">Copied</span></p>
+                                <p class="regular">Мережа: BNB Smart Chain (BEP20)</p>
+                                <p class="regular">Гаманець: Спотовий гаманець</p>
+                                <p class="regular">Минимальна сума переказу: 0,00000001 BUSD</p>
+                            </div>
+                            <div class="popup__content-column">
+                                <h4 class="bold">OTP BANK JSC</h4>
+                                <div class="qr__container">
+                                    <img src="img/qr.svg" alt="" class="qr__img">
+                                </div>
+                                <p class="cript">BUSD Адреса для поповнень: <span class="data data-small"
+                                        id="p5">0xccc1453839dd29c5d2cacae974d3683dc01f34b</span> <button
+                                        class="btn__copy" onclick="copyToClipboard('#p5')"><img src="img/btn__copy.svg"
+                                            alt=""></button><span class="copied">Copied</span></p>
+                                <p class="regular">Мережа: BNB Smart Chain (BEP20)</p>
+                                <p class="regular">Гаманець: Спотовий гаманець</p>
+                                <p class="regular">Минимальна сума переказу: 0,00000001 BUSD</p>
+                            </div>
+                            <div class="popup__content-column">
+                                <h4 class="bold">OTP BANK JSC</h4>
+                                <div class="qr__container">
+                                    <img src="img/qr.svg" alt="" class="qr__img">
+                                </div>
+                                <p class="cript">BUSD Адреса для поповнень: <span class="data data-small"
+                                        id="p5">0xccc1453839dd29c5d2cacae974d3683dc01f34b</span> <button
+                                        class="btn__copy" onclick="copyToClipboard('#p5')"><img src="img/btn__copy.svg"
+                                            alt=""></button><span class="copied">Copied</span></p>
+                                <p class="regular">Мережа: BNB Smart Chain (BEP20)</p>
+                                <p class="regular">Гаманець: Спотовий гаманець</p>
+                                <p class="regular">Минимальна сума переказу: 0,00000001 BUSD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.tabs.neighbors.js"></script>
+    <script>
+        $(function () {
+            $('#tabs').tabs({
+                neighbors: {
+                    prev: $('button.prev'),
+                    next: $('button.next')
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
