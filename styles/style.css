@@ -852,7 +852,7 @@ body.lock {
 .qr__container {
     width: 142px;
     height: 142px;
-    margin: 32px 0;
+    margin: 32px auto;
 }
 .qr__img {
     width: 100%;
