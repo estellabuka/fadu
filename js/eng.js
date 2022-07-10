@@ -61,7 +61,7 @@ btnCopyAll.forEach((btnCopy, btnIndex) => {
 
     Swal.fire({
       position: 'center',
-      title: 'Скопійовано',
+      title: 'Copied',
       background: 'transparent',
       color: '#EBE8E7',
       showConfirmButton: false,
