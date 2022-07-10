@@ -857,27 +857,7 @@ body.lock {
 .qr__img {
     width: 100%;
 }
-.copied {
-    display: none;
-    color: #5C5C5C;
-    font-size: 14px;
-}
 
-.swal2-confirm {
-    /* border: none;
-    padding: 10px 20px;
-    border-radius: 57px;
-    font-size: 14px; */
-    display: none;
-
-}
-/* .swal2-title {
-    font-size: 18px;
-    font-weight: 400;
-} */
-/* .swal2-popup {
-    width: 18em;
-} */
 
 /* ABOUT US */
 
